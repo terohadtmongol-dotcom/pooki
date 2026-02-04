@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{0587d7a3-f2ce-4d56-b84f-a0005d3bfce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources">
+      <UniqueIdentifier>{08e36723-ce4f-4cff-9662-c40801cf1acf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\backends\imgui_impl_win32.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\backends\imgui_impl_dx11.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui_freetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui_settings.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="font.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="custom_widgets.hpp">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="image.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="images.h" />
+    <ClInclude Include="notifications.h" />
+    <ClInclude Include="font_defines.h" />
+    <ClInclude Include="blur\blur.h" />
+    <ClInclude Include="blur\pshader.h" />
+    <ClInclude Include="gui.h" />
+    <ClInclude Include="Loading\driver.hpp" />
+    <ClInclude Include="Loading\map.h" />
+    <ClInclude Include="Sources\actorloop.h" />
+    <ClInclude Include="Sources\drawing.h" />
+    <ClInclude Include="Sources\offsets.h" />
+    <ClInclude Include="Sources\overlay.h" />
+    <ClInclude Include="Sources\sdk.h" />
+    <ClInclude Include="Sources\settings.h" />
+    <ClInclude Include="Sources\slavedriver.h" />
+    <ClInclude Include="Sources\slowdown.h" />
+    <ClInclude Include="Sources\spoof.h" />
+    <ClInclude Include="Auth\auth.hpp" />
+    <ClInclude Include="Auth\json.hpp" />
+    <ClInclude Include="Auth\skStr.h" />
+    <ClInclude Include="Auth\utils.hpp" />
+    <ClInclude Include="Loading\driver.h" />
+    <ClInclude Include="Loading\loading.h" />
+    <ClInclude Include="Sources\platform_icons.h" />
+    <ClInclude Include="Sources\ranked_icons.h" />
+    <ClInclude Include="Loading\detect.h" />
+    <ClInclude Include="Sources\controller.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\backends\imgui_impl_win32.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\backends\imgui_impl_dx11.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui_freetype.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui.cpp" />
+    <ClCompile Include="Loading\driver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\misc\debuggers\imgui.natvis">
+      <Filter>imgui</Filter>
+    </None>
+    <None Include="..\..\misc\debuggers\imgui.natstepfilter">
+      <Filter>imgui</Filter>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\freetype\win64\freetype.lib">
+      <Filter>imgui</Filter>
+    </Library>
+    <Library Include="Auth\library_x64.lib" />
+  </ItemGroup>
+</Project>
