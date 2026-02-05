@@ -72,73 +72,73 @@ inline namespace skeleton_col {
 
 inline namespace c
 {
-	inline ImColor dark_color(15, 16, 20, 255);
-	inline ImColor second_color(17, 18, 22, 255);
-	inline ImColor background_color(22, 30, 25, 255);
-	inline ImColor stroke_color(255, 255, 255, 0);
-	inline ImColor window_bg_color(10, 10, 13, 255);
+    inline ImColor dark_color(8, 8, 12, 255);                  // Almost black with slight red undertone
+    inline ImColor second_color(12, 10, 14, 255);
+    inline ImColor background_color(18, 5, 5, 255);            // Deep bloody dark
+    inline ImColor stroke_color(180, 20, 20, 80);              // Faint blood red stroke
+    inline ImColor window_bg_color(5, 5, 8, 255);              // Pitch black-red
 
-	inline ImVec4 accent = ImColor(0, 250, 180, 255);
-	inline ImVec4 separator = ImColor(38, 42, 52, 255);
+    inline ImVec4 accent = ImColor(200, 30, 30, 255);          // Bright blood red accent
+    inline ImVec4 separator = ImColor(60, 10, 10, 255);        // Dark red separator
 
-	inline namespace anim
-	{
-		inline float  speed = 0.3f;
-		inline ImColor active = ImColor(50, 128, 230, 255);
-		inline ImColor default = ImColor(18, 18, 23, 255);
-	}
+    inline namespace anim
+    {
+        inline float speed = 0.25f;                            // Slightly faster for aggression
+        inline ImColor active = ImColor(220, 40, 40, 255);     // Hot blood red active
+        inline ImColor default = ImColor(20, 15, 18, 255);
+    }
 
-	inline namespace bg
-	{
-		inline ImVec2 padding = ImVec2(10, 10);
-		inline ImVec4 background = ImColor(21, 37, 35, 155);
-		inline ImVec2 size = ImVec2(750, 700);
-		inline float   rounding = 9.f;
-	}
+    inline namespace bg
+    {
+        inline ImVec2 padding = ImVec2(12, 12);
+        inline ImVec4 background = ImColor(25, 8, 8, 180);     // Semi-transparent bloody bg
+        inline ImVec2 size = ImVec2(750, 700);
+        inline float rounding = 8.f;                           // Slightly sharper corners
+    }
 
-	inline namespace child
-	{
-		inline ImVec4 background = ImColor(13, 13, 17, 255);
-		inline ImVec4 cap = ImColor(12, 12, 15, 255);
-		inline ImVec4 stroke = ImColor(38, 42, 52, 0);
-		inline float   rounding = 7.f;
-	}
+    inline namespace child
+    {
+        inline ImVec4 background = ImColor(10, 8, 12, 255);    // Darker child windows
+        inline ImVec4 cap = ImColor(8, 6, 10, 255);
+        inline ImVec4 stroke = ImColor(120, 20, 20, 120);      // Visible blood red stroke
+        inline float rounding = 6.f;
+    }
 
-	namespace page
-	{
-		inline ImVec4 background_active = ImColor(17, 18, 22, 255);
-		inline ImVec4 background = ImColor(15, 16, 20, 255);
-		inline ImVec4 text_hov = ImColor(21, 37, 35, 255);
-		inline ImVec4 text = ImColor(235, 239, 241, 255);
-		inline float   rounding = 5.f;
-	}
+    namespace page
+    {
+        inline ImVec4 background_active = ImColor(35, 10, 10, 255);  // Active tab/page red-tinted
+        inline ImVec4 background = ImColor(18, 8, 8, 255);
+        inline ImVec4 text_hov = ImColor(220, 40, 40, 255);         // Hover text blood red
+        inline ImVec4 text = ImColor(235, 235, 240, 255);           // Clean white-ish
+        inline float rounding = 5.f;
+    }
 
-	inline namespace elements
-	{
-		inline ImVec4 background_hovered = ImColor(38, 42, 52, 255);
-		inline ImVec4 background = ImColor(17, 18, 22, 255);
-		inline float   rounding = 4.f;
-	}
+    inline namespace elements
+    {
+        inline ImVec4 background_hovered = ImColor(80, 15, 15, 255);  // Hover = dark blood
+        inline ImVec4 background = ImColor(25, 10, 12, 255);
+        inline float rounding = 4.f;
+    }
 
-	inline namespace checkbox
-	{
-		inline ImVec4 mark = ImColor(21, 37, 35, 255);
-	}
+    inline namespace checkbox
+    {
+        inline ImVec4 mark = ImColor(220, 30, 30, 255);               // Red checkmark
+    }
 
-	inline namespace text
-	{
-		inline namespace label
-		{
-			inline ImColor active = ImColor(240, 240, 255, 255);
-			inline ImColor hovered = ImColor(240, 240, 240, 255);
-			inline ImColor default = ImColor(151, 151, 151, 255);
-		}
+    inline namespace text
+    {
+        inline namespace label
+        {
+            inline ImColor active = ImColor(255, 240, 240, 255);      // Bright on active
+            inline ImColor hovered = ImColor(255, 220, 220, 255);
+            inline ImColor default = ImColor(200, 200, 205, 255);
+        }
 
-		inline namespace description
-		{
-			inline ImColor active = ImColor(180, 180, 180, 255);
-			inline ImColor hovered = ImColor(21, 37, 35, 255);
-			inline ImColor default = ImColor(151, 155, 151, 255);
-		}
-	}
+        inline namespace description
+        {
+            inline ImColor active = ImColor(220, 180, 180, 255);
+            inline ImColor hovered = ImColor(240, 80, 80, 255);       // Red hover desc
+            inline ImColor default = ImColor(160, 160, 165, 255);
+        }
+    }
 }
